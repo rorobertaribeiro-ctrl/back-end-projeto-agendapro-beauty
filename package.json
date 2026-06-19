@@ -1,0 +1,32 @@
+{
+  "name": "back-end-projeto-agendapro-beauty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "dev": "nodemon server.js",
+  "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorobertaribeiro-ctrl/back-end-projeto-agendapro-beauty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rorobertaribeiro-ctrl/back-end-projeto-agendapro-beauty/issues"
+  },
+  "homepage": "https://github.com/rorobertaribeiro-ctrl/back-end-projeto-agendapro-beauty#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
