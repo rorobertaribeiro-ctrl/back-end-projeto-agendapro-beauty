@@ -34,3 +34,158 @@ Content-Type: application/json
 
 ### Deletar profissional
 DELETE http://localhost:3000/profissionais/1
+
+### Listar serviços
+GET http://localhost:3000/servicos
+
+###
+
+### Criar área primeiro (necessário para o serviço)
+POST http://localhost:3000/areas
+Content-Type: application/json
+
+{
+  "nome": "Cabelo",
+  "descricao": "Serviços de cabelo"
+}
+
+###
+
+### Criar serviço
+POST http://localhost:3000/servicos
+Content-Type: application/json
+
+{
+  "area_id": 1,
+  "nome": "Corte feminino",
+  "duracao_min": 60,
+  "preco": 80.00
+}
+
+###
+
+### Buscar serviço por ID
+GET http://localhost:3000/servicos/1
+
+###
+
+### Atualizar serviço
+PUT http://localhost:3000/servicos/1
+Content-Type: application/json
+
+{
+  "area_id": 1,
+  "nome": "Corte feminino premium",
+  "duracao_min": 90,
+  "preco": 120.00
+}
+
+###
+
+### Deletar serviço
+DELETE http://localhost:3000/servicos/1
+
+### Listar áreas
+GET http://localhost:3000/areas
+
+###
+
+### Criar área
+POST http://localhost:3000/areas
+Content-Type: application/json
+
+{
+  "nome": "Cabelo",
+  "descricao": "Serviços de cabelo"
+}
+
+###
+
+### Atualizar área
+PUT http://localhost:3000/areas/1
+Content-Type: application/json
+
+{
+  "nome": "Cabelo e Coloração",
+  "descricao": "Serviços de cabelo e coloração"
+}
+
+###
+
+### Deletar área
+DELETE http://localhost:3000/areas/1
+
+###
+
+### Listar profissionais
+GET http://localhost:3000/profissionais
+
+###
+
+### Criar profissional
+POST http://localhost:3000/profissionais
+Content-Type: application/json
+
+{
+  "nome": "Ana Paula",
+  "especialidade": "Cabelo",
+  "telefone": "51999999999"
+}
+
+###
+
+### Atualizar profissional
+PUT http://localhost:3000/profissionais/1
+Content-Type: application/json
+
+{
+  "nome": "Ana Paula Silva",
+  "especialidade": "Cabelo e Coloração",
+  "telefone": "51999999999"
+}
+
+###
+
+### Deletar profissional
+DELETE http://localhost:3000/profissionais/1
+
+###
+
+### Listar serviços
+GET http://localhost:3000/servicos
+
+###
+
+### Criar serviço
+POST http://localhost:3000/servicos
+Content-Type: application/json
+
+{
+  "area_id": 1,
+  "nome": "Corte feminino",
+  "duracao_min": 60,
+  "preco": 80.00
+}
+
+###
+
+### Listar serviços por área
+GET http://localhost:3000/servicos?area_id=1
+
+###
+
+### Atualizar serviço
+PUT http://localhost:3000/servicos/1
+Content-Type: application/json
+
+{
+  "area_id": 1,
+  "nome": "Corte feminino premium",
+  "duracao_min": 90,
+  "preco": 120.00
+}
+
+###
+
+### Deletar serviço
+DELETE http://localhost:3000/servicos/1
