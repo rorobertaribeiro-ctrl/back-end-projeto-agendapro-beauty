@@ -1,0 +1,36 @@
+### Listar profissionais
+GET http://localhost:3000/profissionais
+
+###
+
+### Criar profissional
+POST http://localhost:3000/profissionais
+Content-Type: application/json
+
+{
+  "nome": "Ana Paula",
+  "especialidade": "Cabelo",
+  "telefone": "51999999999"
+}
+
+###
+
+### Buscar profissional por ID
+GET http://localhost:3000/profissionais/1
+
+###
+
+### Atualizar profissional
+PUT http://localhost:3000/profissionais/1
+Content-Type: application/json
+
+{
+  "nome": "Ana Paula Silva",
+  "especialidade": "Cabelo e Coloração",
+  "telefone": "51999999999"
+}
+
+###
+
+### Deletar profissional
+DELETE http://localhost:3000/profissionais/1
